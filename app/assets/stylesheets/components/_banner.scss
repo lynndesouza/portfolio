@@ -1,0 +1,125 @@
+#main {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.66) 100%, transparent), url(https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
+  background-size: cover, cover;
+  background-position: center, center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h1 {
+  font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  color: #fff;
+  font-size: 5rem;
+  display: inline-block;
+  padding: 1rem;
+  font-weight: 400;
+  position: relative;
+  opacity: 1;
+  transform: scale(1);
+  transition: transform 1s ease, opacity 3s ease;
+}
+
+.is-loading h1 {
+  transform: scale(0.9);
+  opacity: 0;
+}
+
+h1:before,
+h1:after {
+  height: 2px;
+  width: 100%;
+  content: "";
+  background: white;
+  display: block;
+  position: absolute;
+  transition: width 2s ease;
+  transition-delay: 7s;
+}
+
+h1:before {
+  top: 0;
+  left: 0;
+}
+
+h1:after {
+  bottom: 0;
+  right: 0;
+}
+
+.is-loading h1:before,
+.is-loading h1:after {
+  width: 0;
+}
+
+
+
+
+
+h1.ml8 {
+  font-weight: 900;
+  font-size: 4.5em;
+  color: #fff;
+  width: 3em;
+  height: 3em;
+}
+
+.ml8 .letters-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: -100px;
+  bottom: 0;
+  height: 1em;
+}
+
+.ml8 .letters {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  line-height: 0.7em;
+  right: -0.12em;
+  top: -100px;
+}
+
+.ml8 .bang {
+  font-size: 1.4em;
+  top: -90px;
+  left: -0.06em;
+}
+
+.ml8 .circle {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: -277px;
+  bottom: 0;
+}
+
+.ml8 .circle-white {
+  width: 3em;
+  height: 3em;
+  border: 2px dashed white;
+  border-radius: 2em;
+}
+
+.ml8 .circle-dark {
+  width: 2.2em;
+  height: 2.2em;
+  background-color: #4f7b86;
+  border-radius: 3em;
+  z-index: 1;
+}
+
+.ml8 .circle-dark-dashed {
+  border-radius: 2.4em;
+  background-color: transparent;
+  border: 2px dashed red;
+  width: 2.3em;
+  height: 2.3em;
+  top: -3px;
+}
