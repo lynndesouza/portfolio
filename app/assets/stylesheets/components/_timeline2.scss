@@ -1,0 +1,164 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul {
+  background: #456990;
+  padding: 50px 0;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 130px;
+  background: #E9ECEF;
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0px;
+  width: 400px;
+  padding: 20px;
+  background: white;
+}
+
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 100px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent pink transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -500px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #F45B69;
+}
+
+
+/* EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul li::after {
+  transition: background .5s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 180px;
+  height: 180px;
+  color: white;
+  border: 2px solid $gray-200;
+  border-radius: 100%;
+}
+
+.timeline ul #li-1.in-view::after {
+  background-image: url('https://res.cloudinary.com/lynn-de-souza/image/upload/v1547839776/Portfolio/kenya-1758957_960_720.png');
+};
+
+.timeline ul #li-2.in-view::after {
+  background-image: url('https://res.cloudinary.com/lynn-de-souza/image/upload/v1547839696/Portfolio/transparent_round_logo.gif');
+};
+
+.timeline ul #li-3.in-view::after {
+  background-image: url('https://res.cloudinary.com/lynn-de-souza/image/upload/v1547839696/Portfolio/international-house-school-malta-logo3.png');
+};
+
+.timeline ul #li-4.in-view::after {
+  background-image: url('https://res.cloudinary.com/lynn-de-souza/image/upload/v1547839701/Portfolio/0.png');
+};
+
+.timeline ul #li-5.in-view::after {
+  background-image: url('https://res.cloudinary.com/lynn-de-souza/image/upload/v1547840244/Portfolio/chris-ried-512801-unsplash.jpg');
+};
+
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+  transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -289px;
+    /*250+45-6*/
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #F45B69 transparent transparent;
+  }
+}
