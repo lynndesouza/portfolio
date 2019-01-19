@@ -16,10 +16,9 @@
       </h1>
       </div>
       <div class="col-12 col-lg-12 col-md-8" style="top: -119px;">
-
-        <h1 style="color:white">Nice to meet you.
+        <h1 style="color:#f38181">Nice to meet you.
           <br>
-          Welcome to my page.
+          <span style="color:white;">Welcome to my page.</span>
         </h1>
       </div>
       <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger hideme" href="#services">Who am I?</a>
@@ -29,39 +28,38 @@
 
 
 <!-- Brief -->
-<section class="fdb-block">
+<section class="fdb-block" style="background-color: rgba(186,185,180,0.1)">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-12 col-md-6 mb-4 mb-md-0">
         <img alt="image" class="img-fluid" src="https://res.cloudinary.com/lynn-de-souza/image/upload/v1547895327/Portfolio/lynn_formal_picture.jpg">
       </div>
-      <div class="col-12 col-md-6 col-lg-5 ml-md-auto text-left">
-        <h2 class="text-center">I'm
+      <div class="col-12 col-md-6 col-lg-5 ml-md-auto text-center">
+        <h2 class="text-center" style="color:#f38181;">I'm
         <span
          class="txt-rotate"
          data-period="2000"
-         data-rotate='[ "Lynn.", "26 years old.", "a Swiss/Kenyan", "a full-stack developer.", "an aspiring freelancer." ]'>
+         data-rotate='[ "Lynn.", "26 years old.", "a Swiss/Kenyan.", "a full-stack developer.", "an aspiring freelancer." ]'>
          </span>
        </h2>
         <p class="lead">Hello. I'm an aspiring <strong>Ruby on Rails</strong> developer with a passion for Front End development.
           <br>
-          As more and more businesses incorporate digital technology into their operations, and the market place as a whole has shifted towards more digital commerce, I realised that <strong>an understanding of computer programming is becoming essential.</strong>
+          <br>
+          As more and more businesses incorporate digital technology into their operations, and the market as a whole has shifted towards more digital commerce, I realised that <strong>an understanding of computer programming is becoming essential.</strong>
           <br>
           A level head for problem solving combined with a desire to personally learn, grow and challenge myself led me to begin my coding journey by learning on my own, and later to join Le Wagon's full-stack developer bootcamp.
         </p>
-
       </div>
     </div>
   </div>
 </section>
 
 <!-- Services -->
-<section id="services">
+<section id="services" class="pt-5 mt-5 pb-3 mb-3">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="ml2" id="scroll-to" style="display: none;">Sunny mornings</h2>
-        <h2 class="section-heading text-uppercase">Here's what I can do</h2>
+        <h2 class="section-heading text-uppercase" style="color:#393e46">Here's what I can do</h2>
         <h3 class="section-subheading text-muted">I design & develop quality products to help small & medium level business.</h3>
       </div>
     </div>
@@ -71,7 +69,7 @@
           <i class="fas fa-circle fa-stack-2x text-primary"></i>
           <i class="fas fa-pencil-alt fa-stack-1x fa-inverse"></i>
         </span>
-        <h4 class="service-heading">Web Design</h4>
+        <h4 class="service-heading" style="color:rgba(0,173,181,0.5)">Web Design</h4>
         <p class="text-muted">Your website is sometimes the only thing your customers see. It's your first digital impression and you want to make sure it’s a great one. I can work with you to design a website that is eye-catching, simple, clean and easy to navigate.</p>
       </div>
       <div class="col-md-4">
@@ -79,7 +77,7 @@
           <i class="fas fa-circle fa-stack-2x text-primary"></i>
           <i class="fas fa-wrench fa-stack-1x fa-inverse"></i>
         </span>
-        <h4 class="service-heading">Web Development</h4>
+        <h4 class="service-heading" style="color:rgba(0,173,181,0.5)">Web Development</h4>
         <p class="text-muted"> Whether you're looking for a basic content management system using WordPress, or looking for a full Ruby on Rails database driven web application to create something more personalised....let me know, I'd be happy to work with you to develop something great.</p>
       </div>
       <div class="col-md-4">
@@ -87,7 +85,7 @@
           <i class="fas fa-circle fa-stack-2x text-primary"></i>
           <i class="fas fa-mobile-alt fa-stack-1x fa-inverse"></i>
         </span>
-        <h4 class="service-heading">Fully Responsive</h4>
+        <h4 class="service-heading" style="color:rgba(0,173,181,0.5)">Fully Responsive</h4>
         <p class="text-muted">It is an unmistakable fact that mobile and tablet devices are dominating the way people gravitate to websites. Having a responsive website design is a must. I make sure your product will look and function perfectly on desktop, tablet and mobile devices.</p>
       </div>
     </div>
@@ -131,11 +129,11 @@
 
 
 <!-- Portfolio Grid -->
-<section class="bg-light" id="portfolio">
+<section class="bg-light pt-5 mt-5 pb-3 mb-3" id="portfolio">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="section-heading text-uppercase">Portfolio</h2>
+        <h2 class="section-heading text-uppercase" style="color:#393e46">Portfolio</h2>
         <h3 class="section-subheading text-muted">Check out some of my most recent work!</h3>
       </div>
     </div>
@@ -150,8 +148,8 @@
           <%= image_tag("https://res.cloudinary.com/lynn-de-souza/image/upload/v1544540469/LINC%20photos/Yellow.jpg", class: 'img-fluid', id: '') %>
         </a>
         <div class="portfolio-caption">
-          <h4>LINC</h4>
-          <p class="text-muted">Illustration</p>
+          <h4 style="color:rgba(0,173,181,0.5)">LINC</h4>
+          <p class="text-muted">Website</p>
         </div>
       </div>
       <div class="col-md-4 col-sm-6 portfolio-item">
@@ -164,8 +162,8 @@
           <%= image_tag("https://res.cloudinary.com/lynn-de-souza/image/upload/v1547835313/Portfolio/guilherme-petri-602659-unsplash.jpg", class: 'img-fluid', id: '') %>
         </a>
         <div class="portfolio-caption">
-          <h4>ElmaDeal</h4>
-          <p class="text-muted">Graphic Design</p>
+          <h4 style="color:rgba(0,173,181,0.5)">ElmaDeal</h4>
+          <p class="text-muted">Website prototype</p>
         </div>
       </div>
       <div class="col-md-4 col-sm-6 portfolio-item">
@@ -178,8 +176,8 @@
           <%= image_tag("https://res.cloudinary.com/lynn-de-souza/image/upload/v1547835059/Portfolio/sladjana-karvounis-475851-unsplash.jpg", class: 'img-fluid', id: '') %>
         </a>
         <div class="portfolio-caption">
-          <h4>Golden Shoes</h4>
-          <p class="text-muted">Identity</p>
+          <h4 style="color:rgba(0,173,181,0.5)">Golden Shoes</h4>
+          <p class="text-muted">Website prototype</p>
         </div>
       </div>
       <!-- <div class="col-md-4 col-sm-6 portfolio-item">
@@ -230,40 +228,46 @@
 
 
 <!-- About -->
-<section id="about">
+<section id="about" class="mt-3 pt-3" style="background-color: #e9ecef">
   <div class="row">
     <div class="col-lg-12">
       <div class="timeline">
         <ul>
+          <div class="row text-center">
+            <div class="col-12">
+              <h2 class="section-heading text-uppercase">My Background</h2>
+              <h3 class="section-subheading text-muted mb-3">A little bit more about me...</h3>
+            </div>
+          </div>
           <li id="li-1">
             <div class="timeline-body">
-              <h4 class="timeline-heading">Born and raised in Kenya</h4>
-              <p class="text-muted">Grew up in Mombasa where I went to a British school where I completed my <strong>IGCSEs and AS/A level</strong> certification. </p>
+              <h4 style="color:white">Born and raised in Kenya</h4>
+              <p style="color: #393e46">Grew up in Mombasa where I went to a British school where I completed my <strong>IGCSEs and AS/A level</strong> certification. </p>
             </div>
           </li>
           <li id="li-2">
             <div class="timeline-body">
-              <h4 class="timeline-heading">University in South Africa</h4>
-              <p class="text-muted">Completed my Bachelors Degree in <strong>Business Science Organisational Psychology</strong> at the <%= link_to "University of Cape Town", "http://www.uct.ac.za/", target: "_blank" %> where I graduated with Honours. </p>
+              <h4 style="color:white">University in South Africa</h4>
+              <p style="color: #393e46">Completed my Bachelors Degree in <strong>Business Science Organisational Psychology</strong> at the <%= link_to "University of Cape Town", "http://www.uct.ac.za/", target: "_blank" %> where I graduated with Honours. </p>
             </div>
           </li>
           <li id="li-3">
             <div class="timeline-body">
-              <h4 class="timeline-heading">Taught English in Thailand</h4>
-              <p class="text-muted">Got <strong>CELTA certified</strong> and taught English at <%= link_to "International House", "https://www.ihbangkok.com/", target: "_blank" %> , an international language centre in central Bangkok for 2 years. </p>
+              <h4 style="color:white">Taught English in Thailand</h4>
+              <p style="color: #393e46">Got <strong>CELTA certified</strong> and taught English at <%= link_to "International House", "https://www.ihbangkok.com/", target: "_blank" %> , an international language centre in central Bangkok for 2 years. </p>
             </div>
           </li>
           <li id="li-4">
             <div class="timeline-body">
-              <h4 class="timeline-heading">Full Stack Developer Bootcamp</h4>
-              <p class="text-muted">Did <%= link_to "Le Wagon's", "https://www.lewagon.com/", target: "_blank" %> intensive coding bootcamp learning HTML5, CSS3, Bootstrap4, JavaScript ES2015, SQL, git, GitHub, Heroku and Ruby with Ruby on Rails. </p>
+              <h4 style="color:white">Full Stack Developer Bootcamp</h4>
+              <p style="color: #393e46">Did <%= link_to "Le Wagon's", "https://www.lewagon.com/", target: "_blank" %> intensive coding bootcamp learning HTML5, CSS3, Bootstrap4, JavaScript ES2015, SQL, git, GitHub, Heroku and Ruby with Ruby on Rails. </p>
             </div>
 
           </li>
           <li id="li-5">
             <div class="timeline-body">
-              <h4 class="timeline-heading">Aspiring Front End Developer</h4>
-              <p class="text-muted"> Currently working freelance in an effort to <strong>gain experience and showcase my skills</strong>, while subsequently helping <strong>your business grow</strong> in this technology driven environment. </p>
+              <h4 style="color:white">Aspiring Front End Developer</h4>
+              <p style="color: #393e46"> Currently working freelance in an effort to <strong>gain experience and showcase my skills</strong>, while subsequently helping <strong>your business grow</strong> in this technology driven environment. </p>
             </div>
           </li>
         </ul>

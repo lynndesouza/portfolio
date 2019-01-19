@@ -11,7 +11,7 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .timeline ul {
-  background: #456990;
+  background: $gray-200;
   padding: 50px 0;
 }
 
@@ -20,8 +20,8 @@
   position: relative;
   width: 6px;
   margin: 0 auto;
-  padding-top: 130px;
-  background: #E9ECEF;
+  padding-top: 100px;
+  background: white;
 }
 
 .timeline ul li::after {
@@ -41,7 +41,8 @@
   bottom: 0px;
   width: 400px;
   padding: 20px;
-  background: white;
+  background: rgba(0,173,181,0.4);
+  border-radius: 10px;
 }
 
 .timeline ul li div::before {
@@ -58,7 +59,7 @@
 .timeline ul li:nth-child(odd) div::before {
   left: -15px;
   border-width: 8px 16px 8px 0;
-  border-color: transparent pink transparent transparent;
+  border-color: transparent rgba(0,173,181,0.4) transparent transparent;
 }
 
 .timeline ul li:nth-child(even) div {
@@ -68,7 +69,7 @@
 .timeline ul li:nth-child(even) div::before {
   right: -15px;
   border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent #F45B69;
+  border-color: transparent transparent transparent rgba(0,173,181,0.4);
 }
 
 
@@ -86,8 +87,9 @@
   width: 180px;
   height: 180px;
   color: white;
-  border: 2px solid $gray-200;
+  border: 5px solid $gray-200;
   border-radius: 100%;
+  opacity: 0.9;
 }
 
 .timeline ul #li-1.in-view::after {
