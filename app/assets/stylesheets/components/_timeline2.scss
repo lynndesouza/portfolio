@@ -53,9 +53,7 @@
   border-style: solid;
 }
 
-.timeline ul li:nth-child(odd) div {
-  left: 100px;
-}
+
 
 .timeline ul li:nth-child(odd) div::before {
   left: -15px;
@@ -135,20 +133,31 @@
 
 /* GENERAL MEDIA QUERIES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+  .timeline ul li:nth-child(odd) div {
+  left: 130px;
+  }
+}
 
-@media screen and (max-width: 900px) {
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   .timeline ul li div {
     width: 250px;
   }
   .timeline ul li:nth-child(even) div {
-    left: -289px;
+    left: -356px;
     /*250+45-6*/
+  }
+  .timeline ul li:nth-child(odd) div {
+  left: 110px;
   }
 }
 
-@media screen and (max-width: 600px) {
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   .timeline ul li {
-    margin-left: 20px;
+    margin-left: 30px;
   }
   .timeline ul li div {
     width: calc(100vw - 91px);
@@ -161,4 +170,29 @@
     border-width: 8px 16px 8px 0;
     border-color: transparent #F45B69 transparent transparent;
   }
+  .timeline ul li:nth-child(odd) div {
+  left: 45px;
+  }
+  .timeline ul li.in-view::after {
+  width: 60px;
+  height: 60px;
+}
+}
+
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
 }
