@@ -11,7 +11,7 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .timeline ul {
-  background: $gray-200;
+  background: #F8F8F7;
   padding: 50px 0;
 }
 
@@ -87,7 +87,7 @@
   width: 180px;
   height: 180px;
   color: white;
-  border: 5px solid $gray-200;
+  border: 5px solid white;
   border-radius: 100%;
   opacity: 0.9;
 }
@@ -170,7 +170,7 @@
   .timeline ul li:nth-child(even) div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent #F45B69 transparent transparent;
+    border-color: transparent rgba(0,173,181,0.4) transparent transparent;
   }
   .timeline ul li:nth-child(odd) div {
   left: 45px;

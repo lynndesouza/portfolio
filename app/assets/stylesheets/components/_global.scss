@@ -6,9 +6,13 @@ body {
 
 p {
   line-height: 1.75;
+  font-family: 'Raleway';
+  font-weight: 300;
 }
 
 a {
+  font-family: 'Raleway';
+  font-weight: 300;
   color: $primary;
   &:hover {
     color: darken($primary, 10%);
@@ -25,8 +29,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
+  font-weight: 500;
+  font-family: 'Raleway';
   // @include heading-font;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 section {
@@ -54,6 +64,7 @@ section {
 // Button Styles
 .btn {
   // @include heading-font;
+  font-family: 'Raleway';
   font-weight: 700;
 }
 
@@ -62,9 +73,15 @@ section {
   padding: 20px 40px;
 }
 
-.btn-primary {
-  background-color: $primary;
-  border-color: $primary;
+.btn-main {
+  padding: 10px 20px;
+  margin: 0px 10px;
+  border-radius: 2px;
+  font-weight: 700;
+  font-family: 'Raleway';
+  color: white;
+  background-color: $primary !important;
+  border: none;
   &:active,
   &:focus,
   &:hover {
@@ -74,7 +91,7 @@ section {
   }
   &:active,
   &:focus {
-    box-shadow: 0 0 0 0.2rem rgba(254, 209, 55,.5) !important;
+    box-shadow: 0 0 0 0.2rem rgba(0,173,181,0.5) !important;
   }
 }
 

@@ -10,12 +10,9 @@
 }
 
 .h1 {
-  font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   color: #fff;
-  font-size: 5rem;
   display: inline-block;
   padding: 1rem;
-  font-weight: 400;
   position: relative;
   opacity: 1;
   transform: scale(1);
@@ -29,14 +26,14 @@
 
 h1:before,
 h1:after {
-  height: 2px;
+  height: 5px;
   width: 100%;
   content: "";
   background: white;
   display: block;
   position: absolute;
   transition: width 2s ease;
-  transition-delay: 7s;
+  transition-delay: 6s;
 }
 
 h1:before {
@@ -54,72 +51,112 @@ h1:after {
   width: 0;
 }
 
-
-
-
-
-h1.ml8 {
-  font-weight: 900;
-  font-size: 4.5em;
-  color: #fff;
-  width: 3em;
-  height: 3em;
+#welcome-h1 {
+  font-size: 50px;
+  font-weight: 300;
 }
 
-.ml8 .letters-container {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: -100px;
-  bottom: 0;
-  height: 1em;
+
+ h1.ml8 {
+    font-weight: 900;
+    font-size: 4.5em;
+    color: #fff;
+    width: 3em;
+    height: 3em;
+  }
+
+  .ml8 .letters-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: -100px;
+    bottom: 0;
+    height: 1em;
+  }
+
+  .ml8 .letters {
+    font-family: 'Raleway';
+    font-weight: 600;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    line-height: 0.7em;
+    right: -0.12em;
+    top: -100px;
+  }
+
+  .ml8 .bang {
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 1.4em;
+    top: -90px;
+    left: -0.06em;
+  }
+
+  .ml8 .circle {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: -277px;
+    bottom: 0;
+  }
+
+  .ml8 .circle-white {
+    width: 3em;
+    height: 3em;
+    border: 2px dashed white;
+    border-radius: 2em;
+  }
+
+  .ml8 .circle-dark {
+    width: 2.2em;
+    height: 2.2em;
+    background-color: #00adb5;
+    border-radius: 3em;
+    z-index: 1;
+  }
+
+  .ml8 .circle-dark-dashed {
+    border-radius: 2.4em;
+    background-color: transparent;
+    border: 2px dashed white;
+    width: 2.3em;
+    height: 2.3em;
+    top: -3px;
+  }
+
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
 }
 
-.ml8 .letters {
-  position: relative;
-  z-index: 2;
-  display: inline-block;
-  line-height: 0.7em;
-  right: -0.12em;
-  top: -100px;
-}
 
-.ml8 .bang {
-  font-size: 1.4em;
-  top: -90px;
-  left: -0.06em;
-}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
-.ml8 .circle {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: -277px;
-  bottom: 0;
-}
 
-.ml8 .circle-white {
-  width: 3em;
-  height: 3em;
-  border: 2px dashed white;
-  border-radius: 2em;
-}
+  .ml8 .letters-container {
+    top: -50px;
+  }
 
-.ml8 .circle-dark {
-  width: 2.2em;
-  height: 2.2em;
-  background-color: #4f7b86;
-  border-radius: 3em;
-  z-index: 1;
-}
+  .ml8 .letters {
+    top: -56px;
+  }
 
-.ml8 .circle-dark-dashed {
-  border-radius: 2.4em;
-  background-color: transparent;
-  border: 2px dashed red;
-  width: 2.3em;
-  height: 2.3em;
-  top: -3px;
+  .ml8 .bang {
+    top: -46px;
+    left: 0.01em;
+  }
+
+  .ml8 .circle {
+    top: -150px;
+  }
+
+  .ml8 .circle-dark-dashed {
+    top: 0px;
+  }
 }

@@ -1,6 +1,8 @@
 // Styling for the navbar
 #mainNav {
   background-color: $gray-900;
+  font-family: 'Raleway';
+  font-weight: 300;
   .navbar-toggler {
     font-size: 12px;
     right: 0;
@@ -9,11 +11,13 @@
     color: white;
     border: 0;
     background-color: $primary;
-    // @include heading-font;
+    font-family: 'Raleway';
+    font-weight: 300;
   }
   .navbar-brand {
     color: $primary;
-    // @include script-font;
+    font-family: 'Raleway';
+    font-weight: 300;
     &.active,
     &:active,
     &:focus,
