@@ -1,4 +1,3 @@
-
 <section id="main" class="is-loading">
   <div class="container justify-content-center align-items-center d-flex">
     <div class="row justify-content-center text-center">
@@ -54,7 +53,7 @@
 </section>
 
 <!-- Services -->
-<section id="services" class="pt-5 mt-5 pb-1 mb-1" style="background-color: #F8F8F7">
+<section id="services" data-spy="scroll" data-target="#mainNav" data-offset="0" class="pt-5 mt-5 pb-1 mb-1" style="background-color: #F8F8F7">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
@@ -128,12 +127,12 @@
 
 
 <!-- Portfolio Grid -->
-<section class="pt-5 mt-5 pb-3 mb-3" style="background-color: #FFFFFF;" id="portfolio">
+<section data-spy="scroll" data-target="#mainNav" data-offset="0" class="pt-5 mt-5 pb-3 mb-3" style="background-color: #FFFFFF;" id="portfolio">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
         <h2 class="section-heading text-uppercase" style="color:#393e46">Portfolio</h2>
-        <h3 class="section-subheading text-muted">Check out some of my most recent work!</h3>
+        <h3 class="section-subheading text-muted">Click to open some of my most recent work!</h3>
       </div>
     </div>
     <div class="row">
@@ -147,10 +146,13 @@
           <%= image_tag("https://res.cloudinary.com/lynn-de-souza/image/upload/v1544540469/LINC%20photos/Yellow.jpg", class: 'img-fluid', id: '') %>
         </a>
         <div class="portfolio-caption">
-          <h4 style="color:rgba(0,173,181,0.5)">LINC</h4>
+          <a data-toggle="modal" href="#portfolioModal1">
+          <h4 class="mobile-link" style="color:rgba(0,173,181,0.5)">LINC</h4>
+          </a>
           <p class="text-muted">Website</p>
         </div>
       </div>
+
       <div class="col-md-4 col-sm-6 portfolio-item">
         <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
           <div class="portfolio-hover">
@@ -161,7 +163,9 @@
           <%= image_tag("https://res.cloudinary.com/lynn-de-souza/image/upload/v1547835313/Portfolio/guilherme-petri-602659-unsplash.jpg", class: 'img-fluid', id: '') %>
         </a>
         <div class="portfolio-caption">
-          <h4 style="color:rgba(0,173,181,0.5)">ElmaDeal</h4>
+          <a data-toggle="modal" href="#portfolioModal1">
+          <h4 class="mobile-link" style="color:rgba(0,173,181,0.5)">Elmadeal</h4>
+          </a>
           <p class="text-muted">Website prototype</p>
         </div>
       </div>
@@ -175,7 +179,9 @@
           <%= image_tag("https://res.cloudinary.com/lynn-de-souza/image/upload/v1547835059/Portfolio/sladjana-karvounis-475851-unsplash.jpg", class: 'img-fluid', id: '') %>
         </a>
         <div class="portfolio-caption">
-          <h4 style="color:rgba(0,173,181,0.5)">Golden Shoes</h4>
+          <a data-toggle="modal" href="#portfolioModal1">
+          <h4 class="mobile-link" style="color:rgba(0,173,181,0.5)">Golden Shoes</h4>
+          </a>
           <p class="text-muted">Website prototype</p>
         </div>
       </div>
@@ -227,7 +233,7 @@
 
 
 <!-- About -->
-<section id="about" class="mt-3 pt-3 pb-5" style="background-color: #F8F8F7">
+<section data-spy="scroll" data-target="#mainNav" data-offset="0" id="about" class="mt-3 pt-3 pb-5" style="background-color: #F8F8F7">
   <div class="row">
     <div class="col-lg-12">
       <div class="timeline">
@@ -277,7 +283,7 @@
 
 
 <!-- Contact -->
-<section id="contact" class="fdb-block">
+<section data-spy="scroll" data-target="#mainNav" data-offset="0" id="contact" class="fdb-block">
   <div class="container">
     <div class="row text-center justify-content-center">
       <div class="col-12 col-md-8 col-lg-7">
@@ -382,7 +388,7 @@
                 <li><em>Client:</em>&nbsp; Lion Guardians</li>
               </ul>
               <a class="button btn-main" href="https://linc-lynndesouza.herokuapp.com/" target="_blank">Visit Website</a>
-              <button class="btn-main" data-dismiss="modal" type="button">
+              <button class="btn-main btn-mobile" data-dismiss="modal" type="button">
                 <i class="fas fa-times"></i>&nbsp;
                 Close Project</button>
             </div>
@@ -455,7 +461,7 @@
                 <li><em>Client:</em>&nbsp; Elmadeal</li>
               </ul>
               <a class="button btn-main" href="https://app-elmabook.herokuapp.com/" target="_blank">Visit Website</a>
-              <button class="btn-main" data-dismiss="modal" type="button">
+              <button class="btn-main btn-mobile" data-dismiss="modal" type="button">
                 <i class="fas fa-times"></i>&nbsp;
                 Close Project</button>
             </div>
@@ -525,7 +531,7 @@
                 <li><em>Client:</em>&nbsp; Golden Shoes</li>
               </ul>
              <a class="button btn-main" href="https://goldenshoes.herokuapp.com/" target="_blank">Visit Website</a>
-              <button class="btn-main" data-dismiss="modal" type="button">
+              <button class="btn-main btn-mobile" data-dismiss="modal" type="button">
                 <i class="fas fa-times"></i>&nbsp;
                 Close Project</button>
             </div>
@@ -561,7 +567,7 @@
                 <li>Client: Lines</li>
                 <li>Category: Branding</li>
               </ul>
-              <button class="btn-main" data-dismiss="modal" type="button">
+              <button class="btn-main btn-mobile" data-dismiss="modal" type="button">
                 <i class="fas fa-times"></i>
                 Close Project</button>
             </div>
@@ -595,7 +601,7 @@
                 <li>Client: Southwest</li>
                 <li>Category: Website Design</li>
               </ul>
-              <button class="btn-main" data-dismiss="modal" type="button">
+              <button class="btn-main btn-mobile" data-dismiss="modal" type="button">
                 <i class="fas fa-times"></i>
                 Close Project</button>
             </div>
@@ -629,7 +635,7 @@
                 <li>Client: Window</li>
                 <li>Category: Photography</li>
               </ul>
-              <button class="btn-main" data-dismiss="modal" type="button">
+              <button class="btn-main btn-mobile" data-dismiss="modal" type="button">
                 <i class="fas fa-times"></i>
                 Close Project</button>
             </div>

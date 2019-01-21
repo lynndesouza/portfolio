@@ -162,7 +162,7 @@
 
 .carousel-inner {
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.1),0 1px 0 0 rgba(0,0,0,0.1);
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   height: 60vh;
 }
 
@@ -176,3 +176,19 @@
   height: 60px;
 }
 
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .carousel-inner {
+    height: 30vh;
+  }
+  .btn-mobile {
+    margin-top: 15px;
+  }
+  .modal-content {
+    background-color: white;
+  }
+  .mobile-link {
+    text-decoration: underline;
+  }
+}
