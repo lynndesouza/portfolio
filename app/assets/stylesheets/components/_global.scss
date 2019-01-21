@@ -12,8 +12,8 @@ p {
 
 a {
   font-family: 'Raleway';
-  font-weight: 300;
-  color: $primary;
+  font-weight: 400;
+  color: $gray-900;
   &:hover {
     color: darken($primary, 10%);
   }
